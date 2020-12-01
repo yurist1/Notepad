@@ -1,15 +1,5 @@
-C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.exe.config
-C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.exe
-C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.pdb
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csprojAssemblyReference.cache
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\MainWindow.g.cs
+C:\Users\star0\source\repos\YuristNodepad\obj\Debug\UcItems\UcToolbarItem.g.cs
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\App.g.cs
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad_MarkupCompile.cache
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad_MarkupCompile.lref
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\MainWindow.baml
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.g.resources
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.Properties.Resources.resources
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csproj.GenerateResource.cache
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csproj.CoreCompileInputs.cache
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.exe
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.pdb

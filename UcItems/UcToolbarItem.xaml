@@ -1,0 +1,13 @@
+﻿<UserControl x:Class="YuristNodepad.UcItems.UcToolbarItem"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:YuristNodepad.UserControl"
+             mc:Ignorable="d" 
+              Background="White">
+    <StackPanel Orientation="Vertical">
+        <Label x:Name="lbMenu" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Beige"/>
+        <ListBox x:Name="lbMenuList" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Background="Azure"/>
+    </StackPanel>
+</UserControl>

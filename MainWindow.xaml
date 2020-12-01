@@ -9,16 +9,29 @@
     <Grid>
         <DockPanel Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4" >
             <Menu DockPanel.Dock="Top" Height="40">
-            
+
             </Menu>
-            <RichTextBox DockPanel.Dock="Bottom" >
+            <StatusBar DockPanel.Dock="Bottom" Height="40">
+                <StatusBarItem >
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="Line: "/>
+                        <TextBlock Text="{Binding  Path=CaretPosition}"/>
+                        <TextBlock Text="Colum: "/>
+                        <TextBlock Text="{Binding RichCursorCol}"/>
+                        <TextBlock Text="Zoom: "/>
+                        <TextBlock Text="{Binding RichZoom}"/>
+                        <TextBlock Text="Encoding: "/>
+                        <TextBlock Text="{Binding RichEncoding}"/>
+                    </StackPanel>
+                </StatusBarItem>
+            </StatusBar>
+            <RichTextBox  DockPanel.Dock="Bottom">
                 <FlowDocument>
                     <Paragraph >
                         <Run Text="{Binding RichFullText}" />
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>
-            <StatusBar DockPanel.Dock="Bottom" />
         </DockPanel>
     </Grid>
 </Window>
