@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:YuristNodepad.UcItems">
+    <Style x:Key="stButton" TargetType="{x:Type Button}">
+        <Setter Property="Content" Value="Click Me"/>
+
+        <!--<Style.Triggers>
+            <Trigger Property="Tag" Value="ButtonHasBeenPressed">
+                <Setter Property="Button.Content" Value="!! CLICK Me !!"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+            </Trigger>
+        </Style.Triggers>-->
+
+        <Style.Resources>
+            <ControlTemplate 
+                    x:Key="PressedTemplate" 
+                    TargetType="{x:Type Button}">
+                <Border 
+                        Background="LightSkyBlue" 
+                        BorderBrush="DeepSkyBlue" 
+                        BorderThickness="4"
+                        >
+                    <TextBlock 
+                            Text="Replace this TextBlock with your own content" 
+                            Foreground="ForestGreen" 
+                            />
+                </Border>
+            </ControlTemplate>
+        </Style.Resources>
+    </Style>
+</ResourceDictionary>

@@ -6,8 +6,20 @@
              xmlns:local="clr-namespace:YuristNodepad.UcItems"
              mc:Ignorable="d" 
               Background="White">
+    <UserControl.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="../ResourceDictionary.xaml"/> 
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </UserControl.Resources>
     <StackPanel Orientation="Vertical">
-        <Label x:Name="lbMenu" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Beige"/>
-        <ListBox x:Name="lbMenuList" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Background="Azure"/>
+        <!--<Label x:Name="lbMenu" Content="Label" HorizontalAlignment="Left" VerticalAlignment="Top" Background="Beige">
+            
+        </Label>
+        <ListBox x:Name="lbMenuList" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Background="Azure"/>-->
+        <Button x:Name="btnMenu" Style="{StaticResource stButton}" />
+
+        <ListBox x:Name="lbMenuList" HorizontalAlignment="Left" Height="100"  VerticalAlignment="Top" Width="100" Background="BlueViolet" Visibility="{Binding ElementName=btnMenu, XPath=Click }"/>
     </StackPanel>
 </UserControl>

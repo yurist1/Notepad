@@ -1,0 +1,32 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:local="clr-namespace:YuristNodepad">
+    <Style x:Key="stButton" TargetType="{x:Type Button}">
+        <Setter Property="Content" Value="Click Me"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True" >
+                <Setter Property="Button.Content" Value="!! CLICK Me !!"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <!--리스트 Visibility -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+    <Style x:Key="stButtonClicked" TargetType="{x:Type Button}">
+        <Setter Property="Content" Value="Click Me"/>
+
+        <Style.Triggers>
+            <Trigger Property="IsFocused" Value="True" >
+                <Setter Property="Button.Content" Value="!! CLICK Me !!"/>
+                <Setter Property="FontWeight" Value="Bold"/>
+                <!--리스트 Visibility -->
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+
+    <Style x:Key="stListVisibility" TargetType="{x:Type ListBox}">
+        <Style.Triggers>
+            
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>
