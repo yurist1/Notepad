@@ -12,21 +12,34 @@
             </Trigger>
         </Style.Triggers>
     </Style>
-    <Style x:Key="stButtonClicked" TargetType="{x:Type Button}">
-        <Setter Property="Content" Value="Click Me"/>
 
+
+
+
+
+
+    <Style x:Key="stUc" xmlns:Uc="clr-namespace:YuristNodepad.UcItems"  TargetType="{x:Type Uc:UcToolbarItem}">
         <Style.Triggers>
-            <Trigger Property="IsFocused" Value="True" >
-                <Setter Property="Button.Content" Value="!! CLICK Me !!"/>
-                <Setter Property="FontWeight" Value="Bold"/>
-                <!--리스트 Visibility -->
+            <Trigger Property="IsFocused" Value="True">
+                <Setter Property="Visibility" Value="Collapsed"/>
             </Trigger>
+            <Trigger Property="IsFocused" Value="False">
+                <Setter Property="Visibility" Value="Visible"/>
+            </Trigger>
+            <!--<Trigger Property="btnMenu.IsFocused" Value="False">
+                <Setter Property="lbMenuList.Visibility" Value="Collapsed"/>
+            </Trigger>-->
         </Style.Triggers>
     </Style>
 
-    <Style x:Key="stListVisibility" TargetType="{x:Type ListBox}">
+    <Style x:Key="EnableDependent" TargetType="{x:Type Shape}">
         <Style.Triggers>
-            
+            <DataTrigger Binding="{Binding Path=IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="True">
+                <Setter Property="Stroke" Value="White" />
+            </DataTrigger>
+            <DataTrigger Binding="{Binding Path=IsEnabled, RelativeSource={RelativeSource AncestorType={x:Type UserControl}}}" Value="False">
+                <Setter Property="Stroke" Value="Black" />
+            </DataTrigger>
         </Style.Triggers>
     </Style>
 </ResourceDictionary>
