@@ -25,12 +25,12 @@ namespace YuristNodepad.UcItems
         {
             InitializeComponent();
 
-            lbMenu.MouseLeftButtonUp += LbMenu_MouseLeftButtonUp;
+            lbMenu.MouseDown += LbMenu_MouseLeftButtonUp;
             if (isOpen)
             {
-                lbMenuList.Visibility = Visibility.Visible;
+                //lbMenuList.Visibility = Visibility.Visible;
             }
-            else 
+            else
             {
                 lbMenuList.Visibility = Visibility.Hidden;
             }

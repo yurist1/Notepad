@@ -56,6 +56,9 @@
       <SubType>Designer</SubType>
     </ApplicationDefinition>
     <Compile Include="Common\Observer.cs" />
+    <Compile Include="UcItems\UcToolbar.xaml.cs">
+      <DependentUpon>UcToolbar.xaml</DependentUpon>
+    </Compile>
     <Compile Include="UcItems\UcToolbarItem.xaml.cs">
       <DependentUpon>UcToolbarItem.xaml</DependentUpon>
     </Compile>
@@ -72,6 +75,10 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="UcItems\UcToolbar.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="UcItems\UcToolbarItem.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

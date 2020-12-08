@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\star0\source\repos\YuristNodepad\obj\Debug\
+C:\01.Project\잡다구리\Notepad\obj\Debug\
 YuristNodepad
 none
 false
 DEBUG;TRACE
-C:\Users\star0\source\repos\YuristNodepad\App.xaml
-2766494961
+C:\01.Project\잡다구리\Notepad\App.xaml
+3354239671
 
-8462511243
+91997040947
 13-1505183044
-MainWindow.xaml;UcItems\UcToolbarItem.xaml;
+MainWindow.xaml;UcItems\UcToolbar.xaml;UcItems\UcToolbarItem.xaml;
 
-True
+False
 
