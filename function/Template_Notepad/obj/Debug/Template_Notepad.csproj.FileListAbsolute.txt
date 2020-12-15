@@ -1,0 +1,5 @@
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.pdb

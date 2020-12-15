@@ -6,20 +6,17 @@
         xmlns:local="clr-namespace:YuristNodepad"
         xmlns:UcItems="clr-namespace:YuristNodepad.UcItems" x:Class="YuristNodepad.MainWindow"
         mc:Ignorable="d"
-        Title="MainWindow" Height="auto" Width="auto">
+        Title="Yurist Notepad😍💜💜💜" Height="auto" Width="auto">
     <Grid>
-        <DockPanel Grid.ColumnSpan="2" Margin="0,0,-0.4,-0.4" >
-            <Menu DockPanel.Dock="Top" Height="40" Panel.ZIndex="9999">
-                <!--<MenuItem ItemsSource="{Binding FileList}" >-->
-                <MenuItem x:Name="tetete" >
-                    <MenuItem.Header>
-                        <TextBlock Text="파일"/>
-                    </MenuItem.Header>
-                </MenuItem>
-                <MenuItem/>
-                <UcItems:UcToolbar/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="12*"/>
+            <ColumnDefinition Width="156*"/>
+            <ColumnDefinition Width="595*"/>
+        </Grid.ColumnDefinitions>
+        <DockPanel Grid.ColumnSpan="3" Margin="0,0,-0.334,-0.333" >
+            <Menu x:Name="ToolbarMenu" DockPanel.Dock="Top" Height="20" Panel.ZIndex="9999"/>
 
-            </Menu>
+
             <StatusBar DockPanel.Dock="Bottom" Height="40">
                 <StatusBarItem >
                     <StackPanel Orientation="Horizontal">
