@@ -7,6 +7,7 @@
         xmlns:UcItems="clr-namespace:YuristNodepad.UcItems" x:Class="YuristNodepad.MainWindow"
         mc:Ignorable="d"
         Title="Yurist Notepad😍💜💜💜" Height="auto" Width="auto">
+
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="12*"/>
@@ -14,7 +15,9 @@
             <ColumnDefinition Width="595*"/>
         </Grid.ColumnDefinitions>
         <DockPanel Grid.ColumnSpan="3" Margin="0,0,-0.334,-0.333" >
-            <Menu x:Name="ToolbarMenu" DockPanel.Dock="Top" Height="20" Panel.ZIndex="9999"/>
+            <Menu  DockPanel.Dock="Top" Height="20" Panel.ZIndex="9999" ItemsSource="{Binding ToolbarMenu}" >
+             
+            </Menu>
 
 
             <StatusBar DockPanel.Dock="Bottom" Height="40">

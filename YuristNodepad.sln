@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "View_Notepad", "function\Vi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Help_Notepad", "function\Help_Notepad\Help_Notepad.csproj", "{3652F0BB-EC79-465D-A145-F8959AA09245}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "YuristNotepad.Common", "function\Common\YuristNotepad.Common.csproj", "{FF7A5B8D-38F7-4C77-937A-635811A93EF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{3652F0BB-EC79-465D-A145-F8959AA09245}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3652F0BB-EC79-465D-A145-F8959AA09245}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3652F0BB-EC79-465D-A145-F8959AA09245}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FF7A5B8D-38F7-4C77-937A-635811A93EF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FF7A5B8D-38F7-4C77-937A-635811A93EF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FF7A5B8D-38F7-4C77-937A-635811A93EF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FF7A5B8D-38F7-4C77-937A-635811A93EF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

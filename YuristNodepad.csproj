@@ -119,5 +119,27 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="function\Edit_Notepad\Edit_Notepad.csproj">
+      <Project>{e1aa9f1e-18bc-4d97-9b30-06154788a779}</Project>
+      <Name>Edit_Notepad</Name>
+    </ProjectReference>
+    <ProjectReference Include="function\File_Notepad\File_Notepad.csproj">
+      <Project>{ad868882-7f06-4a98-8d8a-65a6d5be6aa1}</Project>
+      <Name>File_Notepad</Name>
+    </ProjectReference>
+    <ProjectReference Include="function\Help_Notepad\Help_Notepad.csproj">
+      <Project>{3652f0bb-ec79-465d-a145-f8959aa09245}</Project>
+      <Name>Help_Notepad</Name>
+    </ProjectReference>
+    <ProjectReference Include="function\Template_Notepad\Template_Notepad.csproj">
+      <Project>{0426c086-bcf8-428a-b3ab-a1f04f83b354}</Project>
+      <Name>Template_Notepad</Name>
+    </ProjectReference>
+    <ProjectReference Include="function\View_Notepad\View_Notepad.csproj">
+      <Project>{c2878373-14b9-40fa-97f3-1f858fafd101}</Project>
+      <Name>View_Notepad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -3,3 +3,12 @@ C:\01.Project\잡다구리\Notepad\function\View_Notepad\bin\Debug\View_Notepad.
 C:\01.Project\잡다구리\Notepad\function\View_Notepad\obj\Debug\View_Notepad.csprojAssemblyReference.cache
 C:\01.Project\잡다구리\Notepad\function\View_Notepad\obj\Debug\View_Notepad.dll
 C:\01.Project\잡다구리\Notepad\function\View_Notepad\obj\Debug\View_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\bin\Debug\View_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\bin\Debug\View_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\obj\Debug\View_Notepad.csprojAssemblyReference.cache
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\obj\Debug\View_Notepad.csproj.CoreCompileInputs.cache
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\obj\Debug\View_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\obj\Debug\View_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\bin\Debug\strubg.dll
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\bin\Debug\strubg.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\View_Notepad\obj\Debug\View_Notepad.csproj.CopyComplete

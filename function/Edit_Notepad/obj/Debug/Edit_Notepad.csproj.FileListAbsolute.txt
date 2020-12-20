@@ -3,3 +3,12 @@ C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.
 C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csprojAssemblyReference.cache
 C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
 C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csprojAssemblyReference.cache
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CoreCompileInputs.cache
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\bin\Debug\strubg.dll
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\bin\Debug\strubg.pdb
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CopyComplete
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb

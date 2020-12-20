@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C2878373-14B9-40FA-97F3-1F858FAFD101}</ProjectGuid>
+    <ProjectGuid>{FF7A5B8D-38F7-4C77-937A-635811A93EF7}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>View_Notepad</RootNamespace>
-    <AssemblyName>View_Notepad</AssemblyName>
+    <RootNamespace>YuristNotepad.Common</RootNamespace>
+    <AssemblyName>strubg</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
@@ -31,6 +31,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -40,17 +41,11 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Xml" />
+    <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FunctionView.cs" />
-    <Compile Include="Constants.cs" />
+    <Compile Include="CommonToolbar.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Common\YuristNotepad.Common.csproj">
-      <Project>{ff7a5b8d-38f7-4c77-937a-635811a93ef7}</Project>
-      <Name>YuristNotepad.Common</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

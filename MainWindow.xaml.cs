@@ -22,7 +22,6 @@ namespace YuristNodepad
     /// </summary>
     public partial class MainWindow : Window
     {
-        private List<ToolbarMenu> toolbarText;
         public MainWindow()
         {
             InitializeComponent();
@@ -30,25 +29,11 @@ namespace YuristNodepad
             //tetete.ItemsSource = new List<string> { "1", "2", "3", "4" };
             //tetete.Header = "파일";
 
-            SetToolbarMenu();
 
-            foreach (var item in toolbarText)
-            {
-                MenuItem menu = new MenuItem();
-                menu.Header = item.Header;
-                menu.ItemsSource = item.Menu;
-                ToolbarMenu.Items.Add(menu);
-            }
+       
          
           
         }
-        private void SetToolbarMenu() 
-        {
-            toolbarText = new List<ToolbarMenu>();
-            toolbarText.Add(new ToolbarMenu("파일",new List<string>() { "새로 만들기","새 창", "열기", "저장", "다른 이름으로 저장", "페이지 설정", "인쇄", "끝내기"}));
-            toolbarText.Add(new ToolbarMenu("편집",new List<string>() { "실행 취소","잘라내기", "복사", "붙여놓기", "삭제", "찾기"}));
-            toolbarText.Add(new ToolbarMenu("보기",new List<string>() { "확대하기/축소하기","상태 표시줄"}));
-            toolbarText.Add(new ToolbarMenu("도움말",new List<string>() { "메모장 정보"}));
-        }
+        
     }
 }

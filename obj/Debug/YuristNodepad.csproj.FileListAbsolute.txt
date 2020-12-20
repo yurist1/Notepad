@@ -22,6 +22,7 @@ C:\01.Project\잡다구리\Notepad\obj\Debug\YuristNodepad.pdb
 C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.exe.config
 C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.exe
 C:\Users\star0\source\repos\YuristNodepad\bin\Debug\YuristNodepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csprojAssemblyReference.cache
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\MainWindow.g.cs
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\UcItems\UcToolbar.g.cs
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\UcItems\UcToolbarItem.g.cs
@@ -40,3 +41,16 @@ C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csproj.Generat
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csproj.CoreCompileInputs.cache
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.exe
 C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\File_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\strubg.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\File_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\strubg.pdb
+C:\Users\star0\source\repos\YuristNodepad\obj\Debug\YuristNodepad.csproj.CopyComplete
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Edit_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Help_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Template_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\View_Notepad.dll
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Edit_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Help_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\Template_Notepad.pdb
+C:\Users\star0\source\repos\YuristNodepad\bin\Debug\View_Notepad.pdb
