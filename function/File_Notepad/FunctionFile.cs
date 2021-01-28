@@ -1,10 +1,9 @@
-﻿using System;
+﻿using Microsoft.Win32;
+using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Linq;
 using System.Reflection;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 using YuristNotepad.Common;
@@ -26,6 +25,7 @@ namespace File_Notepad
             return _buttons;
         }
         CommonToolbar ct = new CommonToolbar();
+
         private string[] AllMenu()
         {
             //reflection으로 menu 다 담기
@@ -63,10 +63,13 @@ namespace File_Notepad
                     NewWindow(_window);
                     break;
                 case "열기":
+                    OpenFile(_window);
                     break;
                 case "저장":
+                    SaveFile(_window);
                     break;
                 case "다른 이름으로 저장":
+                    SaveFile(_window);
                     break;
                 case "페이지 설정":
                     break;
@@ -88,7 +91,7 @@ namespace File_Notepad
         {
             dynamic mainViewModel = parm;
             string tempMessage = mainViewModel.DataContext.RichFullText;
-            if (tempMessage != null && tempMessage.Length>0) 
+            if (tempMessage != null && tempMessage.Length > 0)
             {
                 //저장 다이얼로그
                 showDialog(tempMessage);
@@ -96,12 +99,32 @@ namespace File_Notepad
             }
             mainViewModel.DataContext.RichFullText = "";
         }
-        private void NewWindow(object parm) 
+        private void NewWindow(object parm)
         {
-            
-        }
+            dynamic mainViewModel = parm;
+            mainViewModel.DataContext.CopyWindow().Show();
 
-        private void showDialog(string msg) 
+
+        }
+        private void OpenFile(object parm)
+        {
+            dynamic mainViewModel = parm;
+
+            OpenFileDialog openDialog = new OpenFileDialog();
+            if (openDialog.ShowDialog() == true)
+            {
+                using (StreamReader sr = new StreamReader(openDialog.FileName, Encoding.Default))
+                {
+                    mainViewModel.DataContext.RichFullText = sr.ReadToEnd();
+                }
+            }
+        }
+        private void SaveFile(object parm)
+        {
+            dynamic mainViewModel = parm;
+            SaveTxt(mainViewModel.DataContext.RichFullText);
+        }
+        private void showDialog(string msg)
         {
             string messageBoxText = "Do you want to save changes?";
             string caption = "Word Processor";
@@ -125,13 +148,19 @@ namespace File_Notepad
             }
         }
 
-        private void SaveTxt(string msg) 
+        private void SaveTxt(string msg)
         {
-            using (StreamWriter saveTxt = new StreamWriter(@"..\..\New_TEXT_File.txt", true))
+            SaveFileDialog saveDialog = new SaveFileDialog();
+            saveDialog.Filter = "Text files (*.txt)|*.txt|All files (*.*)|*.*";
+            if (saveDialog.ShowDialog() == true)
             {
-                saveTxt.WriteLine(msg);
+                using (StreamWriter saveTxt = new StreamWriter(saveDialog.FileName, true))
+                {
+                    saveTxt.WriteLine(msg);
+                }
+
             }
         }
-    }
 
+    }
 }

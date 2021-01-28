@@ -7,6 +7,14 @@ C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\bin\Debug\strubg
 C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CopyComplete
 C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
 C:\Users\star0\source\repos\YuristNodepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\strubg.dll
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\strubg.pdb
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csprojAssemblyReference.cache
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CopyComplete
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb
 C:\project\dotNet\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.dll
 C:\project\dotNet\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.pdb
 C:\project\dotNet\Notepad\function\Edit_Notepad\bin\Debug\strubg.dll
@@ -16,11 +24,3 @@ C:\project\dotNet\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.Co
 C:\project\dotNet\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CopyComplete
 C:\project\dotNet\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
 C:\project\dotNet\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\Edit_Notepad.pdb
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\strubg.dll
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\bin\Debug\strubg.pdb
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csprojAssemblyReference.cache
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.csproj.CopyComplete
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Edit_Notepad\obj\Debug\Edit_Notepad.pdb

@@ -7,6 +7,14 @@ C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\bin\Debug\st
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\bin\Debug\strubg.pdb
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\strubg.dll
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\strubg.pdb
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.pdb
 C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.dll
 C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.pdb
 C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\strubg.dll
@@ -16,11 +24,3 @@ C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.c
 C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
 C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.dll
 C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.pdb
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.pdb
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\strubg.dll
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\bin\Debug\strubg.pdb
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.pdb

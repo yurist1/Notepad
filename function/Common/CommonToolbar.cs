@@ -24,7 +24,7 @@ namespace YuristNotepad.Common
         {
             Button btn = new Button();
             btn.Content = name;
-            
+            btn.Width = 150;
 
             return btn;
 

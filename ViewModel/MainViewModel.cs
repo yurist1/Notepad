@@ -29,14 +29,7 @@ namespace YuristNodepad.ViewModel
         private void Init()
         {
             RichFullText = "안녕";
-            menuItems = new List<MenuItem>();
-            foreach (var item in SetToolbarMenu())
-            {
-                MenuItem menu = new MenuItem();
-                menu.Header = item.Header;
-                menu.ItemsSource = item.Menu;
-                menuItems.Add(menu);
-            }
+            SetToolbar();
 
         }
 
@@ -136,7 +129,17 @@ namespace YuristNodepad.ViewModel
                 OnPropertyChanged("RichEncoding");
             }
         }
-
+        private void SetToolbar() 
+        {
+            menuItems = new List<MenuItem>();
+            foreach (var item in SetToolbarMenu())
+            {
+                MenuItem menu = new MenuItem();
+                menu.Header = item.Header;
+                menu.ItemsSource = item.Menu;
+                menuItems.Add(menu);
+            }
+        }
         private List<ToolbarMenu> SetToolbarMenu()
         {
             List<ToolbarMenu> toolbarText;
@@ -168,6 +171,12 @@ namespace YuristNodepad.ViewModel
             return lb;
 
         }
+        public MainWindow CopyWindow() 
+        {
+            MainWindow ms = new MainWindow();
+            SetToolbar();
 
+            return ms;
+        }
     }
 }
