@@ -11,9 +11,11 @@ namespace View_Notepad
 {
     public class FunctionView
     {
+        private List<Button> _buttons;
         public FunctionView()
         {
-            ct.CreateLabels(AllMenu());
+            _buttons = ct.CreateButtons(AllMenu());
+            
         }
         CommonToolbar ct = new CommonToolbar();
         private string[] AllMenu()
@@ -31,10 +33,14 @@ namespace View_Notepad
 
             return result;
         }
-
-        public List<Label> GetLabels()
+        private void SetEvent() 
         {
-            return ct.CreateLabels(AllMenu());
+        
+        }
+
+        public List<Button> GetLabels()
+        {
+            return _buttons;
         }
     }
 }

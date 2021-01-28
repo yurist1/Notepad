@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Input;
 using Template_Notepad;
@@ -18,6 +19,7 @@ namespace YuristNodepad.ViewModel
     public class MainViewModel : Observer
     {
         private static MainViewModel _mainViewModel;
+        private static Window _window;
         public MainViewModel() 
         {
             Init();
@@ -26,6 +28,7 @@ namespace YuristNodepad.ViewModel
         private List<MenuItem> menuItems;
         private void Init()
         {
+            RichFullText = "안녕";
             menuItems = new List<MenuItem>();
             foreach (var item in SetToolbarMenu())
             {
@@ -37,8 +40,13 @@ namespace YuristNodepad.ViewModel
 
         }
 
-        public static MainViewModel GetInstance()
+        public static MainViewModel GetInstance(Window window)
         {
+            if (_window == null) 
+            {
+                _window = window;
+            
+            }
             if (_mainViewModel == null)
             {
                 _mainViewModel = new MainViewModel();
@@ -133,7 +141,7 @@ namespace YuristNodepad.ViewModel
         {
             List<ToolbarMenu> toolbarText;
             toolbarText = new List<ToolbarMenu>();
-            toolbarText.Add(new ToolbarMenu("파일", new FunctionFile().GetLabels()));
+            toolbarText.Add(new ToolbarMenu("파일", new FunctionFile().GetLabels(_window)));
             toolbarText.Add(new ToolbarMenu("편집", new FunctionEdit().GetLabels()));
             toolbarText.Add(new ToolbarMenu("서식", new FunctionTemp().GetLabels()));
             toolbarText.Add(new ToolbarMenu("보기", new FunctionView().GetLabels()));

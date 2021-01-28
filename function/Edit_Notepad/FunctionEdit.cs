@@ -13,7 +13,7 @@ namespace Edit_Notepad
     {
         public FunctionEdit() 
         {
-            ct.CreateLabels(AllMenu());
+            ct.CreateButtons(AllMenu());
         }
          CommonToolbar ct = new CommonToolbar();
         //ct.CreateLabels(Constants.MENU.CREATE);
@@ -34,9 +34,9 @@ namespace Edit_Notepad
             return result;
         }
 
-        public List<Label> GetLabels()
+        public List<Button> GetLabels()
         {
-            return ct.CreateLabels(AllMenu());
+            return ct.CreateButtons(AllMenu());
         }
     }
 }

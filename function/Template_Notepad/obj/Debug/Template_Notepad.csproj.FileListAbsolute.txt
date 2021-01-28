@@ -12,3 +12,12 @@ C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\bin\Debug\st
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\bin\Debug\strubg.pdb
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
 C:\Users\star0\source\repos\YuristNodepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
+C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.dll
+C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\Template_Notepad.pdb
+C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\strubg.dll
+C:\project\dotNet\Notepad\function\Template_Notepad\bin\Debug\strubg.pdb
+C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csprojAssemblyReference.cache
+C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CoreCompileInputs.cache
+C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.csproj.CopyComplete
+C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.dll
+C:\project\dotNet\Notepad\function\Template_Notepad\obj\Debug\Template_Notepad.pdb

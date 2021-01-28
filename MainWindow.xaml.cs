@@ -25,7 +25,7 @@ namespace YuristNodepad
         public MainWindow()
         {
             InitializeComponent();
-            this.DataContext = MainViewModel.GetInstance();
+            this.DataContext = MainViewModel.GetInstance(this);
             //tetete.ItemsSource = new List<string> { "1", "2", "3", "4" };
             //tetete.Header = "파일";
 

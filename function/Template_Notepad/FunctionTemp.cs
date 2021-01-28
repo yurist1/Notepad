@@ -13,7 +13,7 @@ namespace Template_Notepad
     {
         public FunctionTemp()
         {
-            ct.CreateLabels(AllMenu());
+            ct.CreateButtons(AllMenu());
         }
         CommonToolbar ct = new CommonToolbar();
         private string[] AllMenu()
@@ -32,9 +32,9 @@ namespace Template_Notepad
             return result;
         }
 
-        public List<Label> GetLabels()
+        public List<Button> GetLabels()
         {
-            return ct.CreateLabels(AllMenu());
+            return ct.CreateButtons(AllMenu());
         }
     }
 }

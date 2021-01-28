@@ -12,3 +12,16 @@ C:\Users\star0\source\repos\YuristNodepad\function\File_Notepad\bin\Debug\strubg
 C:\Users\star0\source\repos\YuristNodepad\function\File_Notepad\obj\Debug\File_Notepad.csproj.CopyComplete
 C:\Users\star0\source\repos\YuristNodepad\function\File_Notepad\obj\Debug\File_Notepad.dll
 C:\Users\star0\source\repos\YuristNodepad\function\File_Notepad\obj\Debug\File_Notepad.pdb
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\File_Notepad.dll
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\File_Notepad.pdb
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\strubg.dll
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\strubg.pdb
+C:\project\dotNet\Notepad\function\File_Notepad\obj\Debug\File_Notepad.csprojAssemblyReference.cache
+C:\project\dotNet\Notepad\function\File_Notepad\obj\Debug\File_Notepad.csproj.CoreCompileInputs.cache
+C:\project\dotNet\Notepad\function\File_Notepad\obj\Debug\File_Notepad.csproj.CopyComplete
+C:\project\dotNet\Notepad\function\File_Notepad\obj\Debug\File_Notepad.dll
+C:\project\dotNet\Notepad\function\File_Notepad\obj\Debug\File_Notepad.pdb
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\WindowsBase.dll
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\System.Management.Automation.dll
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\Microsoft.Management.Infrastructure.dll
+C:\project\dotNet\Notepad\function\File_Notepad\bin\Debug\System.Management.Automation.xml

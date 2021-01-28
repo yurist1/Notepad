@@ -10,8 +10,8 @@ namespace YuristNodepad.Model
     public class ToolbarMenu
     {
         public string Header { get; set; }
-        public List<Label> Menu { get; set; }
-        public ToolbarMenu(string header, List<Label> menu) 
+        public List<Button> Menu { get; set; }
+        public ToolbarMenu(string header, List<Button> menu) 
         {
             Header = header;
             Menu = menu;

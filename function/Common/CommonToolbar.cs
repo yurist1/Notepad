@@ -9,23 +9,24 @@ namespace YuristNotepad.Common
 {
     public class CommonToolbar
     {
-        public List<Label> CreateLabels(params string[] names)
+        public List<Button> CreateButtons(params string[] names)
         {
-            List<Label> labels = new List<Label>();
+            List<Button> buttons = new List<Button>();
             foreach (var item in names)
             {
-                labels.Add(CreateLabel(item));
+                buttons.Add(CreateButton(item));
             }
 
-            return labels;
+            return buttons;
 
         }
-        public Label CreateLabel(string name)
+        public Button CreateButton(string name)
         {
-            Label lb = new Label();
-            lb.Content = name;
+            Button btn = new Button();
+            btn.Content = name;
+            
 
-            return lb;
+            return btn;
 
         }
     }
