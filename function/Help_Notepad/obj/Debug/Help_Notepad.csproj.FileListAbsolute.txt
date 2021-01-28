@@ -1,8 +1,3 @@
-C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\Help_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\Help_Notepad.pdb
-C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.csprojAssemblyReference.cache
-C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.dll
-C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.pdb
 C:\Users\star0\source\repos\YuristNodepad\function\Help_Notepad\bin\Debug\Help_Notepad.dll
 C:\Users\star0\source\repos\YuristNodepad\function\Help_Notepad\bin\Debug\Help_Notepad.pdb
 C:\Users\star0\source\repos\YuristNodepad\function\Help_Notepad\obj\Debug\Help_Notepad.csproj.CoreCompileInputs.cache
@@ -21,3 +16,11 @@ C:\project\dotNet\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.csproj.Co
 C:\project\dotNet\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.csproj.CopyComplete
 C:\project\dotNet\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.dll
 C:\project\dotNet\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\Help_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\Help_Notepad.pdb
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\strubg.dll
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\bin\Debug\strubg.pdb
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.csprojAssemblyReference.cache
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.csproj.CopyComplete
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.dll
+C:\01.Project\잡다구리\Notepad\function\Help_Notepad\obj\Debug\Help_Notepad.pdb

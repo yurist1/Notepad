@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Reflection;
 using System.Text;
@@ -56,9 +57,10 @@ namespace File_Notepad
             switch (((Button)sender).Content)
             {
                 case "새로 만들기":
-                    NewWindow(_window);
+                    MakeNew(_window);
                     break;
                 case "새 창":
+                    NewWindow(_window);
                     break;
                 case "열기":
                     break;
@@ -82,13 +84,52 @@ namespace File_Notepad
             ((Window)parm).Close();
             //스레드가 안죽을 수도 있음
         }
-        private void NewWindow(object parm)
+        private void MakeNew(object parm)
         {
             dynamic mainViewModel = parm;
             string tempMessage = mainViewModel.DataContext.RichFullText;
             if (tempMessage != null && tempMessage.Length>0) 
             {
-            //
+                //저장 다이얼로그
+                showDialog(tempMessage);
+
+            }
+            mainViewModel.DataContext.RichFullText = "";
+        }
+        private void NewWindow(object parm) 
+        {
+            
+        }
+
+        private void showDialog(string msg) 
+        {
+            string messageBoxText = "Do you want to save changes?";
+            string caption = "Word Processor";
+            MessageBoxButton button = MessageBoxButton.YesNoCancel;
+            MessageBoxImage icon = MessageBoxImage.Warning;
+            MessageBoxResult result = MessageBox.Show(messageBoxText, caption, button, icon);
+            switch (result)
+            {
+                case MessageBoxResult.Yes:
+                    SaveTxt(msg);
+
+                    break;
+                case MessageBoxResult.No:
+                    // User pressed No button
+                    // ...
+                    break;
+                case MessageBoxResult.Cancel:
+                    // User pressed Cancel button
+                    // ...
+                    break;
+            }
+        }
+
+        private void SaveTxt(string msg) 
+        {
+            using (StreamWriter saveTxt = new StreamWriter(@"..\..\New_TEXT_File.txt", true))
+            {
+                saveTxt.WriteLine(msg);
             }
         }
     }
