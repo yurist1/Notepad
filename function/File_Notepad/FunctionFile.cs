@@ -1,6 +1,7 @@
 ﻿using Microsoft.Win32;
 using System;
 using System.Collections.Generic;
+using System.Drawing.Printing;
 using System.IO;
 using System.Reflection;
 using System.Text;
@@ -74,6 +75,7 @@ namespace File_Notepad
                 case "페이지 설정":
                     break;
                 case "인쇄":
+                    PrintFile(_window);
                     break;
                 case "끝내기":
                     Exit(_window);
@@ -135,17 +137,27 @@ namespace File_Notepad
             {
                 case MessageBoxResult.Yes:
                     SaveTxt(msg);
-
                     break;
-                case MessageBoxResult.No:
-                    // User pressed No button
-                    // ...
-                    break;
-                case MessageBoxResult.Cancel:
-                    // User pressed Cancel button
-                    // ...
+                default:
                     break;
             }
+        }
+        private void FileSetting(object parm)
+        {
+            PageSettings pageSetting = new PageSettings();
+          
+        }
+        private void PrintFile(object parm)
+        {
+             PrintDialog printDialog = new PrintDialog();
+            if (printDialog.ShowDialog() == true)
+            {
+                //printDialog.PrintVisual(,)
+            }
+
+
+            //https://icodebroker.tistory.com/8268 참고하삼
+
         }
 
         private void SaveTxt(string msg)
