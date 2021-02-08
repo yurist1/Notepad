@@ -45,8 +45,6 @@ namespace File_Notepad
 
         private void SetEvent()
         {
-            //((Button)_buttons.Where(d => d.Content.Equals("끝내기")).Select(d => d).FirstOrDefault()).Click += FunctionFile_Click; 
-            //((Button)_buttons.Where(d => d.Content.Equals("새로 만들기")).Select(d => d).FirstOrDefault()).Click += FunctionFile_Click;
             foreach (var item in _buttons)
             {
                 item.Click += FunctionFile_Click;

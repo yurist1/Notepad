@@ -57,6 +57,7 @@
     </ApplicationDefinition>
     <Compile Include="Common\Observer.cs" />
     <Compile Include="Model\ToolbarMenu.cs" />
+    <Compile Include="RichTextBoxHelper.cs" />
     <Compile Include="UcItems\UcToolbar.xaml.cs">
       <DependentUpon>UcToolbar.xaml</DependentUpon>
     </Compile>

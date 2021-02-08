@@ -4,6 +4,7 @@ using System.Linq;
 using System.Reflection;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows;
 using System.Windows.Controls;
 using YuristNotepad.Common;
 
@@ -11,12 +12,14 @@ namespace Edit_Notepad
 {
     public class FunctionEdit
     {
+        private List<Button> _buttons;
+        private Window _window;
         public FunctionEdit() 
         {
-            ct.CreateButtons(AllMenu());
+            _buttons = ct.CreateButtons(AllMenu());
+            SetEvent();
         }
          CommonToolbar ct = new CommonToolbar();
-        //ct.CreateLabels(Constants.MENU.CREATE);
         
         private string[] AllMenu() 
         {
@@ -34,9 +37,69 @@ namespace Edit_Notepad
             return result;
         }
 
-        public List<Button> GetLabels()
+        public List<Button> GetLabels(Window window)
         {
-            return ct.CreateButtons(AllMenu());
+            this._window = window;
+            return _buttons;
+        }
+
+        private void SetEvent()
+        {
+            foreach (var item in _buttons)
+            {
+                item.Click += FunctionEdit_Click;
+            }
+        }
+        private void FunctionEdit_Click(object sender, RoutedEventArgs e)
+        {
+            switch (((Button)sender).Content)
+            {
+                case "실행 취소":
+                    Undo(_window);
+                    break;
+                case "잘라내기":
+                    Cut(_window);
+                    break;
+                case "복사":
+                    Copy(_window);
+                    break;
+                case "붙여놓기":
+                    Paste(_window);
+                    break;
+                case "삭제":
+                    Delete(_window);
+                    break;
+                case "찾기":
+                    Find(_window);
+                    break;
+            }
+        }
+        private void Undo(object parm) 
+        {
+            dynamic mainViewModel = parm;
+            //string tempMessage = mainViewModel.DataContext.RichFullText;
+            //mainViewModel.Undo();
+        }
+        private void Cut(object parm) 
+        {
+            dynamic mainViewModel = parm;
+            string tempMessage = mainViewModel.DataContext.RichSelectedText;
+        }
+        private void Copy(object parm)
+        {
+            dynamic mainViewModel = parm;
+        }
+        private void Paste(object parm)
+        {
+            dynamic mainViewModel = parm;
+        }
+        private void Delete(object parm)
+        {
+            dynamic mainViewModel = parm;
+        }
+        private void Find(object parm)
+        {
+            dynamic mainViewModel = parm;
         }
     }
 }

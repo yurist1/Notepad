@@ -9,7 +9,9 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Documents;
 using System.Windows.Input;
+using System.Xml.Linq;
 using Template_Notepad;
 using View_Notepad;
 using YuristNodepad.Model;
@@ -28,7 +30,6 @@ namespace YuristNodepad.ViewModel
         private List<MenuItem> menuItems;
         private void Init()
         {
-            RichFullText = "안녕";
             SetToolbar();
 
         }
@@ -38,6 +39,7 @@ namespace YuristNodepad.ViewModel
             if (_window == null) 
             {
                 _window = window;
+              
             
             }
             if (_mainViewModel == null)
@@ -49,11 +51,11 @@ namespace YuristNodepad.ViewModel
 
 
         private string richFullText;
+        private string richSeletedText;
         private string richCursorLine;
         private string richCursorCol;
         private string richZoom;
         private string richEncoding;
-
         private RichTextBox rtb;
 
         public List<MenuItem> ToolbarMenu
@@ -69,6 +71,7 @@ namespace YuristNodepad.ViewModel
             }
         }
 
+ 
         public string RichFullText
         {
             get
@@ -79,6 +82,18 @@ namespace YuristNodepad.ViewModel
             {
                 richFullText = value;
                 OnPropertyChanged("RichFullText");
+            }
+        }
+        public string RichSeletedText
+        {
+            get
+            {
+                return richSeletedText;
+            }
+            set
+            {
+                richSeletedText = value;
+                OnPropertyChanged("RichSeletedText");
             }
         }
         public string RichCursorLine
@@ -129,6 +144,20 @@ namespace YuristNodepad.ViewModel
                 OnPropertyChanged("RichEncoding");
             }
         }
+        public RichTextBox RichTextBox
+        {
+            get
+            {
+                return rtb;
+            }
+            set
+            {
+                rtb = value;
+                OnPropertyChanged("RichTextBox");
+            }
+        }
+
+
         private void SetToolbar() 
         {
             menuItems = new List<MenuItem>();
@@ -145,7 +174,7 @@ namespace YuristNodepad.ViewModel
             List<ToolbarMenu> toolbarText;
             toolbarText = new List<ToolbarMenu>();
             toolbarText.Add(new ToolbarMenu("파일", new FunctionFile().GetLabels(_window)));
-            toolbarText.Add(new ToolbarMenu("편집", new FunctionEdit().GetLabels()));
+            toolbarText.Add(new ToolbarMenu("편집", new FunctionEdit().GetLabels(_window)));
             toolbarText.Add(new ToolbarMenu("서식", new FunctionTemp().GetLabels()));
             toolbarText.Add(new ToolbarMenu("보기", new FunctionView().GetLabels()));
             toolbarText.Add(new ToolbarMenu("도움말", new FunctionHelp().GetLabels()));
