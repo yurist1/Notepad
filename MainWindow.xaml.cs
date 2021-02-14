@@ -26,7 +26,7 @@ namespace YuristNodepad
         {
             InitializeComponent();
             this.DataContext = MainViewModel.GetInstance(this);
+            //TextSelection test = rtb.Selection;
         }
-        
     }
 }

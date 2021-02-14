@@ -4,6 +4,7 @@ using File_Notepad;
 using Help_Notepad;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -31,6 +32,7 @@ namespace YuristNodepad.ViewModel
         private void Init()
         {
             SetToolbar();
+            //RichTextBoxData = new FlowDocument();
 
         }
 
@@ -56,7 +58,7 @@ namespace YuristNodepad.ViewModel
         private string richCursorCol;
         private string richZoom;
         private string richEncoding;
-        private RichTextBox rtb;
+        private FlowDocument rtb;
 
         public List<MenuItem> ToolbarMenu
         {
@@ -144,16 +146,16 @@ namespace YuristNodepad.ViewModel
                 OnPropertyChanged("RichEncoding");
             }
         }
-        public RichTextBox RichTextBox
+        public FlowDocument RichTextBoxData
         {
             get
-            {
+            { 
                 return rtb;
             }
             set
             {
                 rtb = value;
-                OnPropertyChanged("RichTextBox");
+                OnPropertyChanged("RichTextBoxData");
             }
         }
 
@@ -181,16 +183,9 @@ namespace YuristNodepad.ViewModel
 
             return toolbarText;
         }
-        private List<Label> CreateLabels(params string[] names)
+        private void rtbEditor_SelectionChanged(object sender, RoutedEventArgs e)
         {
-            List<Label> labels = new List<Label>();
-            foreach (var item in names)
-            {
-                labels.Add(CreateLabel(item));
-            }
-          
-            return labels;
-
+     
         }
         private Label CreateLabel(string name) 
         {
@@ -206,6 +201,70 @@ namespace YuristNodepad.ViewModel
             SetToolbar();
 
             return ms;
+        }
+    }
+
+    public class RichTextHelper : DependencyObject
+    {
+        public static string GetDocumentXaml(DependencyObject obj)
+        {
+            return (string)obj.GetValue(DocumentXamlProperty);
+            //return "안녕";
+        }
+
+        public static void SetDocumentXaml(DependencyObject obj, string value)
+        {
+            obj.SetValue(DocumentXamlProperty, value);
+        }
+
+
+
+
+
+        public static readonly DependencyProperty DocumentXamlProperty =
+            DependencyProperty.RegisterAttached(
+                "TestXaml",
+                typeof(string),
+                typeof(RichTextBoxHelper),
+            new FrameworkPropertyMetadata(new PropertyChangedCallback(OnTextChangePropertyChanged)));
+
+
+
+        private static void OnTextChangePropertyChanged(DependencyObject d, DependencyPropertyChangedEventArgs e)
+
+        {
+
+            var richTextBox = (RichTextBox)d;
+
+            // Parse the XAML to a document (or use XamlReader.Parse())
+            var xaml = GetDocumentXaml(richTextBox);
+            var doc = new FlowDocument();
+            var range = new TextRange(doc.ContentStart, doc.ContentEnd);
+
+            //range.Load(new MemoryStream(Encoding.UTF8.GetBytes(xaml)),
+            //           DataFormats.Xaml); 
+            range.Load(new MemoryStream(Encoding.UTF8.GetBytes(xaml)),
+                       DataFormats.Text);
+
+
+
+            // Set the document
+            richTextBox.Document = doc;
+
+            // When the document changes update the source
+            range.Changed += (obj2, e2) =>
+            {
+                if (richTextBox.Document == doc)
+                {
+                    MemoryStream buffer = new MemoryStream();
+                    //range.Save(buffer, DataFormats.Xaml);
+                    range.Save(buffer, DataFormats.Text);
+                    SetDocumentXaml(richTextBox,
+                        Encoding.UTF8.GetString(buffer.ToArray()));
+                }
+            };
+
+
         }
     }
 }

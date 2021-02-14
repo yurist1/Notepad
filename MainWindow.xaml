@@ -41,8 +41,18 @@
                     </Paragraph>
                 </FlowDocument>
             </RichTextBox>-->
-            <RichTextBox local:RichTextBoxHelper.DocumentXaml="{Binding RichTextBox}" />
-            <!--<TextBox x:Name="TBName" DockPanel.Dock="Bottom" IsUndoEnabled="True" Text="{Binding RichFullText, UpdateSourceTrigger=PropertyChanged}" SelectedText="{Binding RichSelectedText, UpdateSourceTrigger=PropertyChanged}"/>-->
+            <!--<RichTextBox SelectionChanged="RichTextBox_SelectionChanged"/>-->
+
+            <!--<RichTextBox DockPanel.Dock="Bottom" viewmodel:RichTextHelper.DocumentXaml="{Binding RichTextBoxData, NotifyOnTargetUpdated=True}"/>-->
+            <RichTextBox local:RichTextBoxHelper.DocumentXaml="{Binding RichTextBoxData, UpdateSourceTrigger=PropertyChanged}" IsDocumentEnabled="True">
+                <!--<FlowDocument>
+                    <Paragraph>
+                        <Run Text="hhhhh"/>
+                    </Paragraph>
+                </FlowDocument>-->
+            </RichTextBox>
+            <!--<TextBox  DockPanel.Dock="Bottom" IsUndoEnabled="True" Text="{Binding RichFullText, UpdateSourceTrigger=PropertyChanged}" />-->
+          
         </DockPanel>
     </Grid>
 </Window>

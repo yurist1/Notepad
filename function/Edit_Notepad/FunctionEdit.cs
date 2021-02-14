@@ -79,6 +79,7 @@ namespace Edit_Notepad
             dynamic mainViewModel = parm;
             //string tempMessage = mainViewModel.DataContext.RichFullText;
             //mainViewModel.Undo();
+
         }
         private void Cut(object parm) 
         {
